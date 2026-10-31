@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Portfolio | 佐加宗悟</title>
+<meta name="description" content="Web/ITエンジニア志望佐加宗悟のポートフォリオ。Next.js・TypeScript・WordPressによる制作実績をまとめています。">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#ffffff;--surface:#ffffff;--text:#22304a;--muted:#5f6c84;--line:#dde7f3;--accent:#1f7ae0;--accent-soft:#e6f1fd;--tint:#f3f8ff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.8 "Hiragino Sans","Noto Sans JP",system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+header.nav{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+.nav b{letter-spacing:.04em}
+.nav nav a{margin-left:20px;text-decoration:none;color:var(--muted);font-size:14px}
+.nav nav a:hover{color:var(--text)}
+.hero{padding:96px 0 72px;background:linear-gradient(180deg,var(--tint),var(--bg));margin:0 -20px;padding-left:20px;padding-right:20px;border-radius:0 0 24px 24px}
+.hero small{color:var(--accent);font-weight:600;letter-spacing:.12em}
+.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.3;margin:12px 0 20px}
+.hero p{max-width:620px;color:var(--muted);margin:0}
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:14px;letter-spacing:.14em;color:var(--accent);margin:0 0 28px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.skills div,.work{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(31,122,224,.06)}
+.skills h3{margin:0 0 8px;font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0;padding:0;list-style:none}
+.tags li{font-size:12px;background:var(--accent-soft);color:var(--accent);padding:2px 10px;border-radius:99px}
+.works{display:grid;gap:20px}
+.work h3{margin:0 0 4px;font-size:20px}
+.work .meta{color:var(--muted);font-size:13px;margin:0 0 12px}
+.work p{margin:8px 0}
+.work ul{margin:8px 0;padding-left:1.2em}
+.work .links a{margin-right:16px;font-size:14px}
+.work ul.sites{list-style:none;padding:0;border-top:1px solid var(--line)}
+.sites li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--line)}
+.group{font-size:18px;margin:36px 0 16px;padding-left:12px;border-left:4px solid var(--accent)}
+.group small{font-size:12px;color:var(--muted);font-weight:400;margin-left:12px}
+.group:first-of-type{margin-top:0}
+.badge{font-style:normal;font-size:12px;font-weight:700;color:#fff;background:var(--accent);padding:1px 10px;border-radius:99px;margin-left:6px}
+.sites span{color:var(--muted);font-size:13px}
+.now{background:var(--accent-soft);color:var(--accent);border-radius:10px;padding:10px 16px;margin:16px 0 0;font-size:14px;font-weight:600}
+.todo{background:#fff3c4;color:#5c4a00;padding:0 4px;border-radius:3px}
+footer{padding:48px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media(max-width:600px){.nav nav a{margin-left:12px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <b>佐加宗悟</b>
+  <nav><a href="#about">About</a><a href="#skills">Skills</a><a href="#works">Works</a></nav>
+</div></header>
+
+<main class="wrap">
+  <div class="hero">
+    <small>PORTFOLIO</small>
+    <h1>見る人が使いたくなる<br>Webをつくるエンジニアへ。</h1>
+    <p>企画から実装・公開まで一人で作り切ることを大切にしています。個人制作のWebアプリから、WordPressによる企業サイトの構築・運用保守まで経験してきました。</p>
+  </div>
+
+  <section id="about">
+    <h2>ABOUT</h2>
+    <p>佐加宗悟</p>
+  </section>
+
+  <section id="skills">
+    <h2>SKILLS</h2>
+    <div class="skills">
+      <div><h3>WordPress</h3><ul class="tags"><li>WordPress</li><li>オリジナルテーマ制作</li><li>Smart Custom Fields</li><li>Contact Form 7</li><li>SiteGuard</li><li>AIOSEO</li><li>構築・リニューアル・保守管理</li></ul></div>
+      <div><h3>Web開発</h3><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>Git</li></ul></div>
+      <div><h3>サーバー・運用</h3><ul class="tags"><li>レンタルサーバーでの作業</li><li>サイトの公開・移設</li><li>運用・保守</li></ul></div>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>WORKS</h2>
+
+    <h3 class="group">実務<small>クライアント案件・運営</small></h3>
+    <div class="works">
+
+      <article class="work">
+        <h3>Webサイト制作（WordPress）</h3>
+        <p class="meta">WordPress・PHP</p>
+        <p>クライアントのWebサイトの構築・リニューアル・保守管理を担当しています。</p>
+        <ul class="sites">
+          <li><a href="https://yoshimura-group.co.jp/" target="_blank" rel="noopener">吉村穀粉</a><span>構築・保守管理</span></li>
+          <li><a href="https://nishi.travel/" target="_blank" rel="noopener">西尚子公式オフィシャルWEBサイト</a><span>構築・保守管理</span></li>
+          <li><a href="https://archi-asm.com/" target="_blank" rel="noopener">真島瞬建築設計所</a><span>構築・保守管理</span></li>
+          <li><a href="https://magokuro.com/" target="_blank" rel="noopener">元湯 孫九郎</a><span>リニューアル・保守管理</span></li>
+          <li><a href="https://micren.co.jp/ja/" target="_blank" rel="noopener">マイクレンヘルスケア株式会社</a><span>リニューアル・保守管理</span></li>
+          <li><a href="https://www.lhotel-du-lac.com/" target="_blank" rel="noopener">ロテル・デュ・ラク</a><span>保守管理</span></li>
+        </ul>
+        <p class="now">現在、制作会社にて実務3件の制作を進行中です。（公開前のため掲載していません）</p>
+      </article>
+
+      <article class="work">
+        <h3>KLASIC（建築・住宅Webメディア）</h3>
+        <p class="meta">運営・保守管理 / Next.js・WordPress (Headless)・WPGraphQL・Algolia・Vercel</p>
+        <p>建築実例・建築家インタビュー・事務所情報を扱うWebメディア。現在、運営と保守を担当しています。サイトの構成はヘッドレスCMS（フロントエンドはNext.js、CMSはWordPress）です。</p>
+        <ul>
+          <li>不具合修正</li>
+          <li>記事・コンテンツの運用</li>
+          <li>リリース作業</li>
+          <li>レビュー対応</li>
+        </ul>
+        <p class="links"><a href="https://www.klasic.jp/" target="_blank" rel="noopener">サイトを見る（klasic.jp）</a></p>
+      </article>
+
+    </div>
+
+    <h3 class="group">個人制作<small>企画・設計から自分で行ったもの</small></h3>
+    <div class="works">
+
+      <article class="work">
+        <h3>学割NAVI</h3>
+        <p class="meta">個人制作 / WordPress・PHP・Smart Custom Fields・Contact Form 7・SiteGuard・AIOSEO</p>
+        <p>企画・設計・構築・保守管理・運営まで、すべて一人で行っているWebサイトです。</p>
+        <ul>
+          <li>カスタムフィールドで更新しやすい管理画面を設計、マルチステップのお問い合わせフォームを実装</li>
+          <li>SEO（AIOSEO・サイトマップ）とセキュリティ対策プラグインの導入</li>
+        </ul>
+        <p class="links"><a href="https://gakuwari.site/" target="_blank" rel="noopener">サイトを見る（gakuwari.site）</a></p>
+      </article>
+
+      <article class="work">
+        <h3>別の宇宙のあなた</h3>
+        <p class="meta">個人制作 / Claude Codeによるバイブコーディングで設計・開発 / Next.js・TypeScript・Firebase</p>
+        <p>過去の「人生の選択」を入力すると、選ばなかった道の先で暮らすもうひとりの自分の一生を、統計シミュレーションで描くWebアプリ。</p>
+        <ul>
+          <li>AI・外部APIを使わず、日本の統計傾向をもとにブラウザ内で計算。何度遊んでも運用コストがかからない設計</li>
+          <li>種つき乱数により、景気・天候・株価を「分岐した人生／しなかった人生」で共通化し、公平な比較を実現</li>
+          <li>職業×年齢×地域×学歴などから給料を算出するモデル、出来事・借金・海外移住など多数のイベントを実装</li>
+          <li>Googleログイン（任意）でFirestoreに保存、未ログイン時はLocalStorage。Firestoreルールも自作</li>
+        </ul>
+        <p class="links"><a href="https://ifverse.pages.dev/" target="_blank" rel="noopener">サイトを見る（ifverse.pages.dev）</a><a href="https://github.com/ss0-prog/another-life" target="_blank" rel="noopener">GitHub</a></p>
+      </article>
+
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">© 2026 佐加宗悟</div></footer>
+</body>
+</html>
